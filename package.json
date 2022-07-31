@@ -1,0 +1,15 @@
+{
+  "name": "application_e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test":"cypress run",
+    "test-ui": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.3.1"
+  }
+}
