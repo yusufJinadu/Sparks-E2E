@@ -1,6 +1,12 @@
 # Sparks-E2E
-1.Clone the reopo
-Navigate to the folder on the terminal and enter npm install
-after dependency installation, run "npm test" to run the tests in headless mode
-run "npm test-ui" to open the GUI
-click on E2E testing and select the test to run
+1. Clone the reopo
+
+2. Navigate to the folder with cd "Sparks-E2E" 
+ 
+3. on the terminal and enter "npm install"
+
+4. after dependency installation, type "npm run test" in the terminal to run the tests in headless mode
+
+4. run "npm run test-ui" to open the GUI
+
+5. click on E2E testing and select the test to run
