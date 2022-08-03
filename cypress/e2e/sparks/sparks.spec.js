@@ -19,11 +19,11 @@ describe(
 		it('Spark Networks homepage comes first', function () {
 			googlePage.search(this.data.searchWord)
 			cy.get(googlePage.getSearchItem()).first().contains(this.data.searchHeader).should('exist')
-			cy.get(googlePage.getSearchItem()).first().find(googlePage.getLink()).invoke('attr','href').should('eq',this.data.website)
+			cy.get(googlePage.getSearchItem()).first().find(googlePage.getLink()).invoke('attr','href').should('eq',sparksPage.getRoute())
 		});
 
 		it('The search item should lead to the correct page', function () {
-			cy.visit(this.data.website)
+			cy.visit(sparksPage.getRoute())
 			cy.get(sparksPage.getLogo()).find('a').invoke('attr','title').should('eq',this.data.logoAlt)
 		});
 	}
