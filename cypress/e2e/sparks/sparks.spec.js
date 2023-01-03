@@ -8,7 +8,7 @@ describe(
 	'User should be able to find and visit Spark networks first on google',
 	{ tags: ['admin-tool'] },
 	function () {
-		this.beforeEach(() => {
+		beforeEach(() => {
 			// not really neccesary here because the texts are only used in one place, but
 			// generally I refrain from using texts in test so that they can be updated easily if they change
 			cy.fixture(fixture).then(function (data){
